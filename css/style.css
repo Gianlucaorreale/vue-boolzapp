@@ -5,5 +5,36 @@ body{
 
 #side-bar{
     height: 800px;
-    width: 35%;
+    width: 40%;
+    background-color: white;
+}
+
+.avatar{
+    height: 70px;
+    border-radius: 50%;
+}
+
+.side-bar-header{
+    background-color: #EAEAEA;
+    height: 100px;
+}
+
+.side-bar-comunication{
+    background-color: #8EDAFC;
+    height: 100px;
+}
+
+i{
+    font-size: 2rem;
+    color:darkgrey;
+}
+
+p{
+    font-size: 20px;
+}
+
+.bg-color{
+    background-color: white;
+    border-radius: 50%;
+    color: #8EDAFC; 
 }
