@@ -1,0 +1,9 @@
+body{
+    background-image: linear-gradient(#009688 20%, #DCDBD3 0%);
+    height: 100vh;
+}
+
+#side-bar{
+    height: 800px;
+    width: 35%;
+}
