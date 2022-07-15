@@ -4,9 +4,15 @@ body{
 }
 
 #side-bar{
-    height: 800px;
-    width: 40%;
+    height: 700px;
+    width: 35%;
     background-color: white;
+}
+
+#message-area{
+    height: 700px;
+    width: 65%;
+    background-image: url(../img/mine.jpg);
 }
 
 .avatar{
@@ -19,10 +25,24 @@ body{
     height: 100px;
 }
 
+.message-area-header{
+    background-color: #EAEAEA;
+    height: 100px;
+}
+
 .side-bar-comunication{
     background-color: #8EDAFC;
     height: 100px;
 }
+
+.message-area-chat{
+    height: 530px;
+}
+
+.message-area-footer{
+    height: 70px;
+    background-color: #EAEAEA;
+} 
 
 i{
     font-size: 2rem;
@@ -31,6 +51,10 @@ i{
 
 p{
     font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
 }
 
 .bg-color{
