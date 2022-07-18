@@ -98,12 +98,26 @@ const root = new Vue ({
               },
     
                methods:{
-              addText(){
-                if(this.newText){
-                  const newObj ={text: this.newText};
-                  this.contacts.push(newObj);
-                  this.newText='';
+              sendMessage(){
+                if(!this.newText) return;
+                const newMessage ={
+                  text: this.newText,
+                  status: 'sent',
+                  date:new Date().toLocaleString(),
+
                 }
+                this.contacts[this.currentContact].messages.push(newMessage);
+                this.newText = '';
+
+                setTimeout(()=>{
+                  const newMessage = {
+                    text: 'ok',
+                    status: 'received',
+                    date:new Date().toLocaleString(),
+                  }
+                  this.contacts[this.currentContact].messages.push(newMessage);
+                },1000)
+                
               }
                }
 }) 

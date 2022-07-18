@@ -78,11 +78,12 @@
       <div class="message-area-footer d-flex align-items-center">
         <i class="bi bi-emoji-smile"></i>
         <input 
-        v-model.trim="newText" 
+        
         class="form-control me-2" 
         type="search" 
         placeholder="inserisci un messaggio"
-        @keyup.enter="addText" 
+        v-model.trim="newText"
+        @keyup.enter="sendMessage" 
         />
        <i class="bi bi-mic-fill"></i>
       </div>
